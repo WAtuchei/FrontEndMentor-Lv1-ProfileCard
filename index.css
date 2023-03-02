@@ -30,3 +30,28 @@ body {
     overflow: hidden;
 }
 
+.card-main {
+    z-index: 1;
+}
+
+.bg-img1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-45%, -45% );
+    z-index: -5;
+}
+    .bg-img1 > img {
+        max-width: 100%;
+        transform: scaleX(-1);
+    }
+.bg-img2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(30%, 50% );
+    z-index: -5;
+}
+    .bg-img2 > img {
+        max-width: 100%;
+    }
