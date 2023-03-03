@@ -31,26 +31,71 @@ body {
 }
 
 .card-main {
+    width: 420px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
     z-index: 1;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
 }
+    .upper-profile, .middle-profile, .lower-profile {
+        width: 100%;
+        display: flex;
+    }
+    .upper-profile {
+        flex: .2 0 auto;
+    }
 
+    .middle-profile {
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        flex: .8 0 auto;
+        background-color: #fff;
+    }
+        .middle-profile img {
+            position: absolute;
+            top: -50px;
+            border: 7px solid #fff;
+            border-radius: 50%;
+        }
+        .profile-name {
+            position: absolute;
+            top: 50%;
+        }
+
+    .lower-profile {
+        justify-content: space-around;
+        align-items: center;
+        flex: .4 0 auto;
+        background-color: #fff;
+        border-top: 1px solid hsla(227, 10%, 46%, 0.171);
+    }
+        .lower-profile div {
+            flex: 1 0 auto;
+            text-align: center;
+        }
+
+    /* Background Image */
 .bg-img1 {
     position: absolute;
     left: 0;
     top: 0;
-    transform: translate(-45%, -45% );
-    z-index: -5;
+    transform: translate(-35%, -45% );
 }
     .bg-img1 > img {
         max-width: 100%;
-        transform: scaleX(-1);
     }
 .bg-img2 {
     position: absolute;
     right: 0;
     bottom: 0;
     transform: translate(30%, 50% );
-    z-index: -5;
 }
     .bg-img2 > img {
         max-width: 100%;
