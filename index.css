@@ -18,10 +18,9 @@
 
     --Namesize: 18px;
 }
-html {overflow: hidden;}
 body {
     min-height: 100vh;
-    min-width: 100vw;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,8 +29,8 @@ body {
 }
 
 .card-main {
-    width: 375px;
-    height: 440px;
+    max-width: 375px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,15 +110,28 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    transform: translate(-35%, -45% );
+    transform: translate(-30%, -45% );
 }
 .bg-img2 {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
-    transform: translate(30%, 50% );
+    transform: translate(20%, 50% );
 }
 
 @media only screen and (max-width: 450px) {
-    
+    .bg-img1 {
+        transform: translate(-50%, -15% );
+    }
+    .bg-img2 {
+        transform: translate(50%, 30% );
+    }
+}
+@media only screen and (min-width: 420px) and (max-width: 1300px) {
+    .bg-img1 {
+        transform: translate(-45%, -45% );
+    }
+    .bg-img2 {
+        transform: translate(35%, 50% );
+    }
 }
