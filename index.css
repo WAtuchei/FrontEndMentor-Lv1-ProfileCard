@@ -110,13 +110,13 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    transform: translate(-30%, -45% );
+    transform: translate(-30%, -35% );
 }
 .bg-img2 {
     position: fixed;
     right: 0;
     bottom: 0;
-    transform: translate(20%, 50% );
+    transform: translate(20%, 60% );
 }
 
 @media only screen and (max-width: 450px) {
